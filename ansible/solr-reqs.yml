@@ -1,0 +1,4 @@
+---
+- name: solr
+  src: https://github.com/ministryofjustice/hmpps-ansible-role-solr.git
+  version: patch/solr-ha-setup
