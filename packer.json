@@ -1,6 +1,6 @@
 {
   "variables": {
-    "version": "alpha-1.0.0",
+    "version": "{{ env `VERSION` }}",
     "security_group_name": "AlfrescoPacker",
     "profile_name": "{{ env `INSTANCE_IAM_PROFILE` }}"
   },
@@ -49,6 +49,10 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "centos",
+      "ssh_interface": "private_ip",
+      "vpc_id": "vpc-02321f288159e5d0e",
+      "subnet_id": "subnet-00982fba28419ac5f",
+      "temporary_security_group_source_cidr": "10.0.0.0/8",
       "ami_users": [
         "563502482979"
       ],
